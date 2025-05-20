@@ -41,7 +41,7 @@ import useSwitch from "./Hooks/useSwitch"
 
 function App() {
   //snack1
-  const [isOn, toggle] = useSwitch(false)
+  const [isOn, toggle] = useSwitch()
 
   //snack2
   const currentDate = useDate()
@@ -58,8 +58,11 @@ function App() {
       {/* snack 2 */}
       <div>
         <h1>Data e ora attuali:</h1>
-        {/* <p>{currentDate.toLocaleString()}</p> */}
+        <p>{currentDate.toLocaleString()}</p>
       </div>
+
+      {/* snack 3 */}
+
 
 
 
