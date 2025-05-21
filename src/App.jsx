@@ -32,10 +32,9 @@ Cosa deve fare?
 - Usa event listener su keydown e keyup.
 */
 //task customHooks
-import useDate from "./Hooks/useDate"
-import useSwitch from "./Hooks/useSwitch"
-
-
+import useSwitch from "./Hooks/useSwitch"                 //1
+import useDate from "./Hooks/useDate"                     //2
+import useCustomPointer from "./Hooks/useCustomPointer"   //3
 
 
 
@@ -46,6 +45,8 @@ function App() {
   //snack2
   const currentDate = useDate()
 
+  //snack 3
+  const customPointer = useCustomPointer("🔥")
 
   return (
     <>
@@ -62,9 +63,10 @@ function App() {
       </div>
 
       {/* snack 3 */}
-
-
-
+      <div>
+        <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+        {customPointer}
+      </div>
 
     </>
   )

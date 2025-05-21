@@ -12,7 +12,8 @@ export default function useSwitch(initialValue = false) {
             return setIsOn(true)
         }
 
-        // bastava un confronto col suo contrario setIsOn(curr => !curr) 
+        // bastava un confronto col suo contrario
+        // `setIsOn(curr => !curr)` 
     }
 
     return [isOn, toggle]
